@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <title>wpm-game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">wpm-game</div>
+
+    <div class="quote">Click the text field below to begin.</div>
+    <textarea class="input_area" placeholder="Start typing..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <div class="header">
+        <div class="wpm">
+          <div class="header_text">WPM</div>
+          <div class="curr_wpm">100</div>
+        </div>
+        <div class="cpm">
+          <div class="header_text">CPM</div>
+          <div class="curr_cpm">100</div>
+        </div>
+        <div class="errors">
+          <div class="header_text">Mistakes</div>
+          <div class="curr_errors">0</div>
+        </div>
+        <div class="timer">
+          <div class="header_text">Time</div>
+          <div class="curr_time">30s</div>
+        </div>
+        <div class="accuracy">
+          <div class="header_text">% Accuracy</div>
+          <div class="curr_accuracy">100</div>
+        </div>
+      </div>
+      <button class="restart_btn" onclick="resetValues()">Restart</button>
+      <div class="time_input_container">
+        <input type="text" id="time_input" placeholder="Enter time in seconds" />
+        <button onclick="setCustomTime()">Set Time</button>
+        </div>
+      <p>This is a typing speed game that test your typing, seeing how good you are. An extension from the skeleton of the WPM game made by geeksForGeeks</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
