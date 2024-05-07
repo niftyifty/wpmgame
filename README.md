@@ -1,1 +1,1 @@
-# wpmgame.niftyifty.com
+# https://wpmgame.niftyifty.com
